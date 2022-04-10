@@ -1,0 +1,407 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrap .header {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+  padding: 0px 30px 0px 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.wrap .logo {
+  padding-top: 10px;
+}
+
+.wrap .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+}
+
+.wrap .menu li a {
+  padding: 30px 36px 8px 36px;
+  font-family: 'TT Commons';
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #A59FC0;
+}
+
+.wrap .menu li a.active, .wrap .menu li a:hover {
+  color: #FFCE33;
+  border-bottom: 2px solid #FFCE33;
+}
+
+.wrap .menu li:first-child a {
+  background: url(../img/icons/home.svg) center top no-repeat;
+}
+
+.wrap .menu li:first-child a.active, .wrap .menu li:first-child a:hover {
+  background: url(../img/icons/home-a.svg) center top no-repeat;
+}
+
+.wrap .menu li:nth-child(2) a {
+  background: url(../img/icons/search.svg) center top no-repeat;
+}
+
+.wrap .menu li:nth-child(2) a.active, .wrap .menu li:nth-child(2) a:hover {
+  background: url(../img/icons/search-a.svg) center top no-repeat;
+}
+
+.wrap .menu li:nth-child(3) a {
+  background: url(../img/icons/plus.svg) center top no-repeat;
+}
+
+.wrap .menu li:nth-child(3) a.active, .wrap .menu li:nth-child(3) a:hover {
+  background: url(../img/icons/plus-a.svg) center top no-repeat;
+}
+
+.wrap .menu li:nth-child(4) a {
+  background: url(../img/icons/watch.svg) center top no-repeat;
+}
+
+.wrap .menu li:nth-child(4) a.active, .wrap .menu li:nth-child(4) a:hover {
+  background: url(../img/icons/watch-a.svg) center top no-repeat;
+}
+
+.wrap .menu li:last-child a {
+  background: url(../img/icons/bell.svg) top center no-repeat;
+}
+
+.wrap .menu li:last-child a.active, .wrap .menu li:last-child a:hover {
+  background: url(../img/icons/bell-a.svg) center top no-repeat;
+}
+
+.wrap .lang {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .lang span {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1E0E62;
+  padding-right: 9px;
+}
+
+.wrap .profil {
+  margin-top: 15px;
+}
+
+.wrap .main-wrap {
+  padding: 0 155px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.wrap .left {
+  width: -webkit-calc(100% - 400px);
+  width: calc(100% - 400px);
+}
+
+.wrap .left .l-top {
+  background: #FFFFFF;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  padding: 15px 15px 10px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  overflow: hidden;
+}
+
+.wrap .left .l-top .kat {
+  display: block;
+}
+
+.wrap .left .l-top .kat:last-child {
+  position: relative;
+}
+
+.wrap .left .l-top .kat:last-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(right, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(right, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.wrap .left .l-top .kat span {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1E0E62;
+}
+
+.wrap .left .l-top .kat img {
+  margin-bottom: 9px;
+}
+
+.wrap .rigth {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.wrap .rigth .rec {
+  background: #FFFFFF;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  padding: 33px 30px 30px 30px;
+}
+
+.wrap .rigth .rec .rec-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.wrap .rigth .rec .rec-title .title {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1E0E62;
+}
+
+.wrap .rigth .rec .rec-title .all {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  text-align: right;
+  color: #1E0E62;
+}
+
+.wrap .rigth .rec .recs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.wrap .rigth .rec .recs a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.wrap .rigth .rec .recs a .recs-name div {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 3px;
+  color: #1E0E62;
+}
+
+.wrap .rigth .rec .recs a .recs-name span {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #A59FC0;
+}
+.img{
+  display: flex;
+}
